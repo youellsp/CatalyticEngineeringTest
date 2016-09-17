@@ -23,7 +23,7 @@ public class RequestHistoryController {
 
     @ApiOperation(value = "Retrieves all the requests that have been made by the user")
     @RequestMapping(value = "service/requestHistory", method = RequestMethod.GET)
-    @ApiResponse(code = 200, message = "Success", response = History.class)
+    @ApiResponse(code = 200, message = "Success", response = List.class)
     public List<History> getHistory() {
 
         List<History> requestHistory = new ArrayList<>();
