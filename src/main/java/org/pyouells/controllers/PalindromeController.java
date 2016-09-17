@@ -32,7 +32,7 @@ public class PalindromeController {
 
         try {
             //Save the original string and strip out whitespace and non-alphabetic characters
-            String strippedString = string.toLowerCase().replaceAll("[^a-z]", "");
+            String strippedString = string.toLowerCase().replaceAll("[^a-z0-9]", "");
             Boolean isPalindrome = strippedString.equals(new StringBuilder(strippedString).reverse().toString());
 
             if(isPalindrome){

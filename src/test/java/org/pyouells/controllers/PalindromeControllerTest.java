@@ -38,4 +38,13 @@ public class PalindromeControllerTest {
         Assert.assertEquals(response, "'Race cars' is not a Palindrome");
 
     }
+
+    @Test
+    public void palindromeTest3() throws Exception {
+        String response = palindromeController.getPalindrome("123", request);
+
+        Assert.assertNotNull(response);
+        Assert.assertEquals(response, "'123' is not a Palindrome");
+
+    }
 }

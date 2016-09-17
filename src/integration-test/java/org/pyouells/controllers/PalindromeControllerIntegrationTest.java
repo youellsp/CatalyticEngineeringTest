@@ -46,4 +46,18 @@ public class PalindromeControllerIntegrationTest {
         Assert.assertEquals(response, "'Draw pupil's pup's lip downward' is not a Palindrome");
 
     }
+
+    @Test
+    public void getPalindrome3() {
+        String server = "http://localhost:";
+        String endpoint = "/service/palindrome/";
+        String palindromeToTest = "123";
+
+        String response =
+                restTemplate.getForObject(server + port + endpoint + palindromeToTest, String.class);
+
+        Assert.assertNotNull(response);
+        Assert.assertEquals(response, "'123' is not a Palindrome");
+
+    }
 }

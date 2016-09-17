@@ -11,7 +11,7 @@ buildscript {
 		classpath('se.transmode.gradle:gradle-docker:1.2')
 	}
 }
-group = 'youellsp'
+group = 'pyouells'
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -71,7 +71,7 @@ tasks.withType(Test) {
 task buildDocker(type: Docker) {
 	baseImage = 'develar/java:latest'
 	push = project.hasProperty('push')
-	tag = 'youellsp/engineering-test'
+	tag = 'pyouells/engineering-test'
 	addFile {
 		from jar
 		rename {'engineering-test-app.jar'}
