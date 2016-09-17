@@ -3,7 +3,7 @@ Spring Boot Microservice for Catalytic
 
 Instructions for Running (requires Docker to be installed)
 
-Run the following commands in terminal from root directory of  the "CatalyticEngineeringTest" folder
+Run the following commands in terminal from root directory of  the "CatalyticEngineeringTest-master" folder
 
    1.  Start the docker machine  
      *  ```docker-machine start ```  
